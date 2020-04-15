@@ -1,0 +1,56 @@
+body {
+    font-size: 1.0em;
+    color: black;
+    font-family: sans-serif;
+    max-width: 900px;
+    margin: auto;
+    background-color:white;
+}
+
+h1 {
+/*    color: rgb(255,255,100); */
+    background-color: #ddd;
+    font-size: 2.0em;
+    padding: 0.5em;
+}
+
+/* This is a comment */
+
+h2 {
+    background-color: #ccc;
+    padding: 0.5em;
+}
+
+a {
+    text-decoration: underline;
+
+}
+
+strong {
+    font-style: italic;
+
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.alignright {
+
+    float: right;
+}
+
+
+.alignleft {
+
+    float: left;
+}
+
+.aligncentre {
+
+    width: 200px
+    margin: 0 auto;
+}
+
+
