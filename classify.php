@@ -25,6 +25,9 @@ function writeData($index) {
     if (!isset($special))
       $special = 0;
   
+    if ($comment == '')
+      $comment='-';
+
     /* Report answer on screen to enable checking */
     echo "<br>";
     echo "Last image: " . strval($index) . ", answer: " . $score;
@@ -145,7 +148,7 @@ if (!$preim) {
 echo "<h1> Galaxy $currim </h1>";
       
 /* Getting close to doing useful stuff. First, set up image file name */
-$im="./classifyimages/test" . $currim . ".png";
+$im="./classifyimages/image_" . $currim . ".png";
    
 /* Check if this image file exists */
 if (!file_exists($im)) {
