@@ -1,0 +1,33 @@
+Instructions:
+------------
+
+1.) Put your to-be-classified images, named 'image_1.png', 'image_2.png', ...
+    in the subdirectory 'classifyimages/'.
+
+2.) Start a local PHP server to run the script:
+    $ php -S localhost:7777
+
+3.) Open your favourite web browser and go to the site
+    http://localhost:7777/classify.php
+
+4.) There should now be a dialogue box asking you to enter a file name.
+    Any name is fine, this will be the name of an ASCII file holding your
+    classification results. If you come back after partially completing
+    the classification, enter the same name as before to resume classifying.
+
+5.) There should then appear a series of galaxy images, one by one, with
+    the option to tick a few simple boxes beneath. Clicking 'Next galaxy'
+    will switch to the next one; for completeness, your answer will be 
+    shown near the top of the screen (in numerical values).
+
+6.) 'No' gives a score of 1, 'Maybe' 2, and 'Yes' 3. For 'Special?', ticking
+    the box gives a value of 1 (else 0). Anything entered in the 'Comment'
+    field will be recorded as is.
+
+7.) When all galaxy images have been shown, the program will display a short
+    message, you can then quit the browser. Otherwise, you can take a break
+    at any point by just quitting the browser, and then resume by repeating
+    steps 2--4 and entering the same file name in step 4.
+
+8.) The file ./doc/[whatever name you entered] contains an ASCII list of your
+    results. You can do with it whatever you want...
