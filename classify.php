@@ -33,7 +33,7 @@ function writeData($index) {
     echo "Last image: " . strval($index) . ", answer: " . $score;
     echo "<br>";
 
-    $file=fopen("./doc/" . $datf, "a+");
+    $file=fopen("./doc/" . $datf, "a+") or die($php_errormsg);
 
     /* Write header if this is the first entry */
     if ($index == 1)
